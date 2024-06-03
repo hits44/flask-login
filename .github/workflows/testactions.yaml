@@ -1,1 +1,13 @@
-
+name: test
+run-name: testing ${{github.actor}}
+on: [workflow_call]
+jobs:
+  explring:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello hitesh ji"
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+    
