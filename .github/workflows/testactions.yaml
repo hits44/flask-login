@@ -1,6 +1,6 @@
 name: test
 run-name: testing ${{github.actor}}
-on: [workflow_call]
+on: [workflow_call, workflow_dispatch]
 jobs:
   explring:
     runs-on: ubuntu-latest
